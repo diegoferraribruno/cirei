@@ -1,0 +1,240 @@
+html {
+  background: black;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+canvas {
+  position:fixed;
+  top:0;
+  left: 0;
+  z-index: -1;
+}
+#canvas2 {
+filter: blur(1px);
+}
+body {
+  margin: 0px 0px 0px 0px;
+  padding: 4px 4px 4px 4px;
+  width: 3840px;
+  height: 2160px;
+  font-weight: bold;
+  color: #ffffff;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  border-style: inset;
+}
+#exbody{
+  background-image: url('/images/bg200x200.png');
+  background-color: #116633;
+ 
+}
+.myButton {
+  padding: 8px 8px 8px 8px;
+  border-radius: 8px;
+}
+
+.menu {
+
+  position: fixed;
+  align-content: center;
+  width: 100%;
+  z-index: 3;
+}
+
+#player2 {
+  position: absolute;
+  z-index: 1;
+  width: 48px;
+  height: 64px;
+  min-height: 64;
+  left: 300px;
+  top: 400px;
+  border-style: dotted;
+  border-color: #eeeeee;
+}
+
+#player1 {
+  position: absolute;
+  z-index: 1;
+  width: 48px;
+  height: 64px;
+  min-height: 64;
+  left: 400px;
+  top: 400px;
+  border-style: dotted;
+  border-color: #eeeeee;
+}
+
+.pname{
+  float: left;
+  position: absolute;
+  top:-42px;
+}
+#corpo2 {
+  height: 32px;
+  width: 32px;
+  background: url('/images/danca.png') 0px 0px;
+  margin: 28px 12px 10px 6px;
+  padding: 0px 0px 0px 0px;
+  position: absolute;
+  filter: hue-rotate(180deg);
+    border-style: dotted;
+  border-color: #eeeeee;
+}
+
+
+#corpo1 {
+  height: 32px;
+  width: 32px;
+  background: url('/images/danca.png') 0px 0px;
+  margin: 28px 12px 10px 6px;
+  padding: 0px 0px 0px 0px;
+  position: absolute;
+  filter: hue-rotate(0deg);
+    border-style: dotted;
+  border-color: #eeeeee;
+}
+
+#lhand {
+  position: absolute;
+  margin: 38px 24px;
+}
+
+#rhand {
+  position: absolute;
+  margin: 38px 6px;
+}
+
+.casa {
+  left:20px;
+  top:10px;
+  margin: 40px 45px 8px 45px;
+  height: 106px;
+  width: 190px;
+  padding: 20px 20px 0px 20px;
+  border-style: solid;
+  border-radius: 18px 18px 4px 4px;
+  border-width: 18px 6px 4px 6px;
+  border-color: #00ff157e;
+  background-color: #22ce0073;
+  align-content: center;
+  position: relative;
+  z-index: 2;
+  float: left;
+}
+
+#porta {
+  margin: 12px 40px 20px 40px;
+  height: 72px;
+  width: 62px;
+  border-style: solid;
+  border-radius: 4px 4px 4px 4px;
+  border-width: 4px 4px 0px 4px;
+  border-color: #fbffc6;
+  background-color: #dddddd55;
+  padding-top: 4px;
+  align-content: center;
+  
+}
+
+.rua {
+  margin: 160px 10px 0px 0px;
+  height: 68px;
+  width: 3680px;
+  border-style: solid;
+  border: 20px 6px 6px 6px;
+  border-radius: 20px 20px 20px 20px;
+  border-width: 50px 50px 50px 50px;
+  border-color: #22222222;
+  background-color: #000000bb;
+  padding: 8px 8px 8px 8px;
+  font-size: 10px;
+  color: #dfb111;
+  padding-top: 56px;
+  vertical-align: middle;
+  z-index: -3;
+}
+.ruah {
+  margin: -50px 20px 00px 00px;
+  height: 1700px;
+  width: 160px;
+  border-style: solid;
+  border-radius: 20px 20px 20px 20px;
+  border-width: 0px 50px 40px 50px;
+  border-color: #22222222;
+  background-color: #000000bb;
+  padding: 8px 8px 8px 8px;
+  font-size: 10px;
+  color: #dfb111;
+  padding-top: 56px;
+  vertical-align: middle;
+  float: left;
+}
+.ruah2 {
+  margin: -50px 80px 00px 00px;
+  height: 1700px;
+  width: 160px;
+  border-style: solid;
+  border: 20px 6px 6px 6px;
+  border-radius: 20px 20px 20px 20px;
+  border-width: 0px 40px 40px 40px;
+  border-color: #22222222;
+  background-color: #000000bb;
+  padding: 8px 8px 8px 8px;
+  font-size: 10px;
+  color: #dfb111;
+  padding-top: 56px;
+  vertical-align: middle;
+  float: right;
+}
+.chat {
+  margin: -50px 80px 00px 00px;
+  height: 800px;
+  width: 360px;
+  border-style: solid;
+  border: 20px 6px 6px 6px;
+  border-radius: 20px 20px 20px 20px;
+  border-width: 0px 40px 40px 40px;
+  border-color: #ffd90098;
+  background-color: #00000022;
+  padding: 8px 8px 8px 8px;
+  font-size: 10px;
+  color: #dfb111;
+  padding-top: 56px;
+  vertical-align: middle;
+  float: right;
+}
+#cabeca {
+  position: absolute;
+  margin-top: -2px;
+  margin-left: 0px;
+
+}
+
+iframe {
+  margin: 45px 45px 45px 45px;
+  padding: 8px 8px 8px 8px;
+  margin-bottom: 84px;
+  padding-bottom: 54px;
+  border-bottom: 80px;
+  border-style: solid;
+  border-color: #000;
+  background-color: #000000;
+  background-image: url("/images/2680.png");
+  border-image: url("/images/2680.png") 100;
+}
+
+.space {
+  float: left;
+  margin: 45px 0px 45px 45px;
+}
+
+.color {
+  filter: hue-rotate(180deg);
+}
