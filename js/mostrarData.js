@@ -31,5 +31,5 @@ function mostrarData() {
         case 6:
           dia = "Sabadão.";
     }
-      document.getElementById("data").innerHTML = saudacao+" "+ dia+ " ultima atualização: "+Date();
+      document.getElementById("data").innerHTML = "Agosto já chegou. as eleições estão logo ali.<br/>"+saudacao+" "+ dia;
   }

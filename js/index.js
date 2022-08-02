@@ -42,7 +42,7 @@ if (x.style.display === "none") {
   },
   false
 );*/
-// left: 37, up: 38, right: 39, down: 40,
+/* // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
@@ -68,7 +68,7 @@ try {
 var wheelOpt = supportsPassive ? { passive: false } : false;
 var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
 
-// call this to Disable
+call this to Disable
 function disableScroll() {
   window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
   window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
@@ -82,4 +82,4 @@ function enableScroll() {
   window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
   window.removeEventListener('touchmove', preventDefault, wheelOpt);
   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
-}
+}*/

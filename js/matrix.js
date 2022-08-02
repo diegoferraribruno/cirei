@@ -15,7 +15,7 @@ ctx2.shadowColor = 'white';
 */
 class Symbol {
     constructor(x, y, fontSize, canvasHeight){
-        this.characters = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        this.characters = 'cIRO12CIRO12CIRO12CIRO12CIRO12CIRO12アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン12EGMOS';
         this.x = x;
         this.y = y;
         this.fontSize = fontSize;
@@ -62,7 +62,7 @@ class Effect {
 }
 const effect = new Effect(canvas.width, canvas.height);
 let lastTime = 0;
-const fps = 26;
+const fps = 24;
 const nextFrame = 1000/fps;
 let timer = 0;
 

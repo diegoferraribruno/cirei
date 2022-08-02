@@ -1,6 +1,6 @@
 doElsCollide = function(el1, el2) {
-    el1 = document.getElementById("player1");
-    el2 = document.getElementById("player2");
+    el1 = document.getElementById(el1);
+    el2 = document.getElementById(el2);
     var rect1 = {x: parseInt(el1.style.left,10), y: parseInt(el1.style.top,10), width:parseInt(el1.style.Width,10), height:parseInt(el1.style.Height,10) };
     var rect2 = {x: parseInt(el2.style.left,10), y: parseInt(el2.style.top,10), width:parseInt(el2.style.Width,10), height:parseInt(el2.style.Height,10) };
     
