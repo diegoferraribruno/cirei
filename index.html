@@ -1,5 +1,106 @@
 <html>
-<head><link rel="stylesheet" type="text/css" href="/css/style.css" />
+<head><link rel="stylesheet" type="text/css" href="<html>
+<head><link rel="stylesheet" type="text/css" href="https://diegoferraribruno.github.io/css/style.css" />
+<title>Cirei!</title>
+</head>
+<body style="margin:0px;">
+  <div id="joypad" style="float:left; position:fixed; z-index: 3; width: 168px; height: 80px; top:580px; left:20px;" >
+    <center>
+    <button class="joypadButton" onclick="joypad('up')" onmousedown="joypad('up')">&nbsp; /\ &nbsp;</button><br />
+    <button class="sideButton" onclick="joypad('left')">&nbsp; < &nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="sideButton"onclick="joypad('right')">&nbsp; > &nbsp;</button><br />
+    <button class="joypadButton"onclick="joypad('down')">&nbsp; \/ &nbsp;</button>
+  </center>
+  </div>
+  <div id="joypadB" style="float:right; position:fixed; z-index: 3; width: 168px; height: 80px; top:600px; left: 340px;px;">&nbsp;&nbsp;&nbsp;&nbsp;<button class="joypadButton" onclick="joypad('A')">&nbsp; A &nbsp;</button><br /><br />
+  <button class="joypadButton" onclick="joypad('B')">&nbsp; B &nbsp;</button>&nbsp;&nbsp;&nbsp;</div>
+  
+  <canvas id='canvas1'></canvas>
+<canvas id='canvas2'></canvas>
+  <br/>
+<center>
+  <div class="menu">
+    <h1>Cirei.com.br</h1>
+    <div id="data">what</div>
+      <button onclick="seguecam(0)" type="button" class="myButton">
+        P?</button>
+  <button onclick="seguecam(1)" type="button" class="myButton">
+           P1 :) </button>
+  <button onclick="seguecam(2)" type="button" class="myButton">
+           P2 :) </button>
+           <button onclick='twitterTag("PrefiroCiro")'>#PrefiroCiro</button>
+           <button onclick='twitterTag("CiroGames")'>#CiroGames</button>
+           <button onclick="mudaCara('daciolo')">Glória!</button>
+  </div>
+  
+  
+</center>
+
+<div id="player1" style="left: 100px; top: 220px;"><div class="pname" ><a href="http://diegoferraribruno.itch.io">Diego<br/></a></div>
+      <a name="player1"></a>
+      <p id="corpo1" onmouseover="animateScript()" class="color"></p> <div id="cabeca"><img src="https://diegoferraribruno.github.io/cirei/images/tank.png"></div>
+     joypa
+      <div id="rhand"></div>
+      <p id="lhand"></p>
+
+    </div>
+    <div id="player2" style="left: 200px; top: 200px;"><div class="pname" ><a href="http://diegoferraribruno.itch.io">Pedrao<br/></a></div>
+      <a name="player2"></a>
+      <p id="corpo2" onmouseover="animateScript()" class="color"></p>
+      <p id="cabeca"><img id="head2"width=48px height=48px src="https://diegoferraribruno.github.io/cirei/images/vacacogumelow.png"></p>
+
+    </div>
+    
+    <div class="rua">O Mundo Livre (Creative Commons) oferece tudo o que necessitamos para desenvolver qualquer coisa: html + css + javascript + node.js + websocket + socket.io + express + mongoose + mongoDB</div>
+    
+ <div class="space"><a class="twitter-timeline" data-lang="pt" data-width="400" data-height="1720" data-theme="dark" href="https://twitter.com/cirogomes?ref_src=twsrc%5Etfw">Tweets by cirogomes</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  </div>
+ <div class="chat">Vamo chatear!</div>
+ <div id="musicas">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1OprNXC6vN1IJ3trMOYunM?utm_source=generator&theme=0" width="360" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0pF6JPyuLEzwIe7yHPvDXe?utm_source=generator&theme=0" width="360" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1OprNXC6vN1IJ3trMOYunM?utm_source=generator&theme=0" width="360" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2m2zIerBwPDjvtTSfB3ynb?utm_source=generator&theme=0" width="360" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>   
+ <div id="videos"></div>
+ <div id="casas">
+  <div class="casa" id="c01"><center>Casa<div id=porta></div></center></div><div class="casa"><center>Casa<div id=porta></div></center></div><div class="casa"><center>Casa<div id=porta></div></center></div><div class="casa"><center>Casa<div id=porta></div></center></div>
+  <div class="casa"><center>Casa<div id=porta></div></center></div><div class="casa"><center>Casa<div id=porta></div></center></div><div class="casa"><center>Casa<div id=porta></div></center></div><div class="casa"><center>Casa<div id=porta></div></center></div>
+  <div class="casa"><center>Casa<div id=porta></div></center></div><div class="casa"><center>Casa<div id=porta></div></center></div><div class="casa"><center>Casa<div id=porta></div></center></div><div class="casa"><center>Casa<div id=porta></div></center></div>
+  </div>  
+  <script src="https://diegoferraribruno.github.io/cirei/js/twittertag.js"></script>
+ <script src="https://diegoferraribruno.github.io/cirei/js/matrix.js"></script>
+    <script src="https://diegoferraribruno.github.io/cirei/js/game.js"></script>
+    <script src="https://diegoferraribruno.github.io/cirei/js/player.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://diegoferraribruno.github.io/cirei/js/mostrarData.js"></script>
+    
+<script> function animateScript(){
+  let element = document.getElementById("banana");
+  if (element != null){element.remove();}
+  else {
+  document.getElementById('rhand').innerHTML = '<img src="https://diegoferraribruno.github.io/cirei/images/1f34c.png" class="color" id="banana">';}
+}
+
+var plataformas = []
+function getVideos(){
+  var videos = ["x6m1oUQMZSk","zPY6BPFKST0","Nkd8N9t6CBE","Z2rnWqA2bXA","9Bu9eQmCxSk","PIwOl6JBQdY","kCdcuEtX6o0","phux1KuJ7V4"];
+  for (i in videos){
+    document.getElementById("videos").innerHTML += '<iframe width="360" height="280" id="iframe'+i+'" src="https://www.youtube.com/embed/'+videos[i]+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    plataformas.push("iframe"+i);
+  }
+}
+getVideos()
+mostrarData()
+seguecam(1)
+
+
+</script>
+
+  
+</div>
+</body>
+</html>
+/css/style.css" />
 <title>www.cirei.com.br</title>
 </head>
 <body style="margin:0px;">
