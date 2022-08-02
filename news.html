@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Estudos de JS aplicados</title></head>
+<style>
+#demo{
+    font:8;
+    font-family: monospace;
+}
+#bemvindos{
+  align-content: center;
+  text-align: center;
+  width: 720px;
+  border: 4px;
+  border-style: dashed;
+  border-color: black;
+  min-height: 1200px;
+  padding: 8px;
+  background-color: azure;
+}
+#sidebar{
+  position: relative;
+  float: right;
+  width: 64px;
+  border: 4px;
+  border-style: dashed;
+  border-color: black;
+  padding: 20px 20px 20px 20px;
+  background-color: yellow;
+  align-content: flex-start;
+}
+
+iframe{
+  float: right;
+
+}
+.twitter-timeline{
+  float: left;
+}
+#frame{
+  width: 100%;
+  align-content: center;
+}
+body{
+  background-color: rgb(204, 226, 194);
+}
+</style>
+
+<body id ="body">
+<div id="frame">
+ <center>
+<div id="bemvindos">
+  <div id="sidebar"><img src="cabeca.png"></div>
+  <button onclick="mostrarData()">oi!</button>
+  <input type="text" id="comando" onkeypress="myFunction(event.key)"><button onclick='myFunction("Enter")''>></button>
+  <p id="demo"></p>
+  
+  <div id="tecla"></div>
+<a href="https://www.instagram.com/reel/CgorkJFAOkj/?utm_source=ig_embed&amp;utm_campaign=loading" target="_blank">Veja esta publicação compartilhada por Ciro Gomes (@cirogomes) no instagram! </a>
+<a class="twitter-timeline" data-lang="pt" data-width="320" data-height="1200" data-theme="light" href="https://twitter.com/cirogomes?ref_src=twsrc%5Etfw">Tweets do Cirão</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <p id="videos"></p>
+  </div>
+</center>
+</div>
+
+<script>
+function myFunction(oque) {
+  let key = oque;
+  document.getElementById("tecla").innerHTML = oque;
+  switch(key){
+    case "Enter":
+      let enviado = document.getElementById("comando").value;
+      if (enviado.search("script") == -1){
+      commando(enviado);
+      document.getElementById("tecla").innerHTML = "Comando "+ enviado +" Enviado";
+      limparComando();}
+      else{document.getElementById("tecla").innerHTML = "nao pode script!"}
+  }
+}
+function limparComando(){
+  document.getElementById("comando").value = "";
+  document.getElementById("tecla").value = "";
+  document.getElementById("videos").value = "";
+  
+}
+function mostrarData() {
+  const hour = new Date().getHours(); 
+  let saudacao;
+  if (hour < 12) {
+    saudacao = "Booom dia,";
+  } else {
+    saudacao = "Boa Tarde,";
+    if(hour >18){
+      saudacao = "Boa Noite,";}
+  }
+    let dia;
+    switch (new Date().getDay()) {
+      case 0:
+        dia = "eita Domingão!";
+        break;
+      case 1:
+        dia = "Brasil, A Segunda-feira chegou.";
+        break;
+      case 2:
+        dia = "opá! Terça-feira é dia de #CiroGames!";
+        break;
+      case 3:
+        dia = "Quarta-feira é bom demais!";
+        break;
+      case 4:
+        dia = "Quinta-feira, tamo quase lá!";
+        break;
+      case 5:
+        dia = "Sextou Brasil!";
+        break;
+      case 6:
+        dia = "Sabadão hein?!";
+  }
+    document.getElementById("demo").innerHTML = "<h2>" + saudacao + " " + dia + "</h2><h5>última atualização: "+ Date()+"</h5>";
+}
+function commando(oque){
+  let oqueArray = oque.split(" ",3)
+  switch (oqueArray[0]){
+    case "limpar":
+      document.getElementById("demo").innerHTML = "";
+      document.getElementById("tecla").innerHTML = "";
+    case "admin":
+      switch (oqueArray[1]){
+        case "atualizar":
+         window.location.reload();
+         break;
+      }
+  }
+}
+mostrarData()
+
+
+
+function getVideos(){
+  var videos = ["x6m1oUQMZSk","zPY6BPFKST0","Nkd8N9t6CBE","Z2rnWqA2bXA","9Bu9eQmCxSk","PIwOl6JBQdY","kCdcuEtX6o0"];
+  for (i in videos){
+    document.getElementById("videos").innerHTML += '<iframe width="360" height="280" src="https://www.youtube.com/embed/'+videos[i]+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+  }
+}
+getVideos()
+
+
+
+
+//future implementation....
+function toCelsius(f) {
+  return (5/9) * (f-32);
+  //document.getElementById("demo").innerHTML += toCelsius(110);
+}
+
+
+
+</script>
+</body>
+</html> 
