@@ -8,6 +8,12 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: monospace;
+}
+h1{
+  margin: -20px 0px 0px 0px;
+  bottom: 10px;
+  font-family:sans-serif;
 }
 canvas {
   position:fixed;
@@ -30,7 +36,7 @@ body {
   border-style: inset;
 }
 #exbody{
-  background-image: url('/images/bg200x200.png');
+  background-image: url('https://diegoferraribruno.github.io/cirei/images/bg200x200.png');
   background-color: #116633;
  
 }
@@ -38,7 +44,27 @@ body {
   padding: 8px 8px 8px 8px;
   border-radius: 8px;
 }
+button{
+  margin-top: 12px;
+  padding: 8px 8px 8px 8px;
+  border-radius: 8px;
+  color: #03c04f;
+  background-color: #000000b4;
+  border-color: #ff38c3ab;
 
+}
+.joypadbutton{
+  margin: 0px 0px -12px 0px;
+  padding: 12px 12px 12px 12px;
+}
+a {
+  color: pink;
+  text-decoration: wavy;
+}
+a.visited{
+  color: palevioletred;
+  text-decoration: wavy;
+}
 .menu {
 
   position: fixed;
@@ -55,8 +81,7 @@ body {
   min-height: 64;
   left: 300px;
   top: 400px;
-  border-style: dotted;
-  border-color: #eeeeee;
+
 }
 
 #player1 {
@@ -67,8 +92,7 @@ body {
   min-height: 64;
   left: 400px;
   top: 400px;
-  border-style: dotted;
-  border-color: #eeeeee;
+
 }
 
 .pname{
@@ -79,26 +103,23 @@ body {
 #corpo2 {
   height: 32px;
   width: 32px;
-  background: url('/images/danca.png') 0px 0px;
+  background: url('https://diegoferraribruno.github.io/cirei/images/danca.png') 0px 0px;
   margin: 28px 12px 10px 6px;
   padding: 0px 0px 0px 0px;
   position: absolute;
   filter: hue-rotate(180deg);
-    border-style: dotted;
-  border-color: #eeeeee;
+
 }
 
 
 #corpo1 {
   height: 32px;
   width: 32px;
-  background: url('/images/danca.png') 0px 0px;
+  background: url('https://diegoferraribruno.github.io/cirei/images/danca.png') 0px 0px;
   margin: 28px 12px 10px 6px;
   padding: 0px 0px 0px 0px;
   position: absolute;
   filter: hue-rotate(0deg);
-    border-style: dotted;
-  border-color: #eeeeee;
 }
 
 #lhand {
@@ -142,10 +163,13 @@ body {
   align-content: center;
   
 }
+.sidebutton{
+  font-size: 20;
 
+}
 .rua {
-  margin: 160px 10px 0px 0px;
-  height: 68px;
+  margin: 0px 10px 0px 0px;
+  height: 120px;
   width: 3680px;
   border-style: solid;
   border: 20px 6px 6px 6px;
@@ -194,21 +218,21 @@ body {
   float: right;
 }
 .chat {
-  margin: -50px 80px 00px 00px;
-  height: 800px;
-  width: 360px;
+  margin: 40px 80px 00px 00px;
+  height: 580px;
+  width: 340px;
   border-style: solid;
   border: 20px 6px 6px 6px;
   border-radius: 20px 20px 20px 20px;
   border-width: 0px 40px 40px 40px;
   border-color: #ffd90098;
-  background-color: #00000022;
+  background-color: #00000088;
   padding: 8px 8px 8px 8px;
-  font-size: 10px;
+  font-size: 18px;
   color: #dfb111;
   padding-top: 56px;
   vertical-align: middle;
-  float: right;
+  float: left;
 }
 #cabeca {
   position: absolute;
@@ -224,10 +248,11 @@ iframe {
   padding-bottom: 54px;
   border-bottom: 80px;
   border-style: solid;
-  border-color: #000;
+  border-color: rgb(0, 0, 0);
   background-color: #000000;
-  background-image: url("/images/2680.png");
-  border-image: url("/images/2680.png") 100;
+  background-image: url("https://diegoferraribruno.github.io/cirei/images/tijolos.png");
+  border-width: 40px 6px 8px 6px;
+  border-radius: 40px 40px 20px 20px;
 }
 
 .space {
