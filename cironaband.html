@@ -10,7 +10,7 @@
   <body>
   <div id="conteudo"></div> 
 <script>
-  let count = 0;
+  
   let hashtag = "CiroNaBand";
   let perguntas = ["Ciro é","Ciro tem Projeto","Hoje vai ser","Comprovadamente, Ciro","Este debate vai ser",
   "Ciro quando fala","A superioridade do Ciro" ,"Ciro tem competência" ,"O livro do Ciro","O projeto do Ciro","Ciro é",
@@ -18,13 +18,13 @@
   "Este debate vai ser","Ciro quando fala","A superioridade do Ciro","Ciro tem competência",
   "O livro do Ciro","O projeto do Ciro","Ciro é","Ciro tem Projeto","Hoje vai ser",
   "Comprovadamente, Ciro","Este debate vai ser","Ciro quando fala","A superioridade do Ciro",
-  "Ciro tem competência", "O livro do Ciro", "O projeto do Ciro", "Ciro é", "Ciro tem Projeto", "Hoje vai ser",
+  "Ciro tem competência", "O livro do Ciro", "O projeto do Ciro", "O Ciro é", "Ciro tem Projeto", "Hoje vai ser",
   "Comprovadamente, Ciro", "Este debate vai ser", "Ciro quando fala", "A superioridade do Ciro",
   "Ciro tem competência", "O livro do Ciro", "O projeto do Ciro", "Ciro é", "Ciro tem Projeto",
   "Hoje vai ser", "Comprovadamente, Ciro", "Este debate vai ser", "Ciro quando fala",
   "A superioridade do Ciro","Ciro tem competência","O livro do Ciro","O projeto do Ciro"]
+let count = Math.floor(Math.random() * perguntas.length);
 function start(){
-    
     for (i in perguntas){
         if (count == i){
 
@@ -38,18 +38,23 @@ start();
 
 function enviar(i){
     let resposta = document.getElementById(i).value
-    let tw_text = perguntas[i] + " " + resposta + " Prefiro o Ciro."
+    let tw_text = perguntas[i] + " " + resposta + ". Prefiro o Ciro."
     tw_text = "https://twitter.com/intent/tweet?hashtags="+hashtag+"&text="+tw_text;
     tw_text = tw_text.replace(" ","%20");
     tw_text = tw_text.replace("#","%23");
     tw_text = tw_text.replace("=%2c","=");
     window.open(tw_text);
-    count++
+    add_count()
     start()
 }
 function reset(){
-    count++
+    add_count();
     start();
+function add_count(){
+  count++
+  if (count > perguntas.length){
+  count =0;
+  }
 }
 
   </script>
