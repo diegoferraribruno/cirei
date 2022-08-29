@@ -12,17 +12,8 @@
 <script>
   
   let hashtag = "CiroNaBand";
-  let perguntas = ["Ciro é","Ciro tem Projeto","Hoje vai ser","Comprovadamente, Ciro","Este debate vai ser",
-  "Ciro quando fala","A superioridade do Ciro" ,"Ciro tem competência" ,"O livro do Ciro","O projeto do Ciro","Ciro é",
-  "Ciro tem Projeto","Hoje vai ser","Comprovadamente, Ciro",
-  "Este debate vai ser","Ciro quando fala","A superioridade do Ciro","Ciro tem competência",
-  "O livro do Ciro","O projeto do Ciro","Ciro é","Ciro tem Projeto","Hoje vai ser",
-  "Comprovadamente, Ciro","Este debate vai ser","Ciro quando fala","A superioridade do Ciro",
-  "Ciro tem competência", "O livro do Ciro", "O projeto do Ciro", "O Ciro é", "Ciro tem Projeto", "Hoje vai ser",
-  "Comprovadamente, Ciro", "Este debate vai ser", "Ciro quando fala", "A superioridade do Ciro",
-  "Ciro tem competência", "O livro do Ciro", "O projeto do Ciro", "Ciro é", "Ciro tem Projeto",
-  "Hoje vai ser", "Comprovadamente, Ciro", "Este debate vai ser", "Ciro quando fala",
-  "A superioridade do Ciro","Ciro tem competência","O livro do Ciro","O projeto do Ciro"]
+  let perguntas = ["Prefiro o Ciro porque","Ciro é","Ciro tem Projeto","Hoje vai ser","Comprovadamente, Ciro","Este debate vai ser",
+    "Ciro quando fala","A superioridade do Ciro" ,"Ciro tem competência" ,"O livro do Ciro","O projeto do Ciro","O Ciro é"]
 let count = Math.floor(Math.random() * perguntas.length);
 function start(){
     for (i in perguntas){
@@ -38,7 +29,7 @@ start();
 
 function enviar(i){
     let resposta = document.getElementById(i).value
-    let tw_text = perguntas[i] + " " + resposta + ". Prefiro o Ciro."
+    let tw_text = perguntas[i] + " " + resposta + "."
     tw_text = "https://twitter.com/intent/tweet?hashtags="+hashtag+"&text="+tw_text;
     tw_text = tw_text.replace(" ","%20");
     tw_text = tw_text.replace("#","%23");
