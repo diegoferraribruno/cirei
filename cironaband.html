@@ -19,7 +19,7 @@ function start(){
     for (i in perguntas){
         if (count == i){
 
-            document.getElementById('conteudo').innerHTML = perguntas[i] + " " + 
+            document.getElementById('conteudo').innerHTML = perguntas[i] + ". "
             '<input type="text" id="'+i+'" style="border-radius: 16px; padding:6px; margin: 10px 0px 10px 0px;" placeholder="responda aqui"> </input>'+
             '<button id="enviar" onclick="enviar('+i+')">enviar</button> <button id="reset" onclick="reset()">proxima</button>'
         }
